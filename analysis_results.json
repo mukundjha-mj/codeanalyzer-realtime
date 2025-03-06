@@ -1,0 +1,75 @@
+{
+    "filename": "D:\\pro\\test\\test2.py",
+    "issues": [
+        "[SECURITY] Line 5: Hardcoded credential found: password",
+        "[READABILITY] Line 7: Function 'MissingDocstringFunction' is missing a docstring.",
+        "[STYLE] Line 7: Function 'MissingDocstringFunction' does not follow snake_case naming.",
+        "[READABILITY] Line 10: Function 'deep_recursion' is missing a docstring.",
+        "[READABILITY] Line 15: Function 'long_function' is missing a docstring.",
+        "[PERFORMANCE] Line 16: Deeply nested loops detected, consider refactoring.",
+        "[READABILITY] Line 21: Function 'complex_function' is missing a docstring.",
+        "[READABILITY] Line 39: Function 'unused_function' is missing a docstring.",
+        "[READABILITY] Line 42: Function 'except_without_exception' is missing a docstring.",
+        "[READABILITY] Line 49: Function 'large_memory_usage' is missing a docstring.",
+        "[CODE QUALITY] Unused import detected: hashlib",
+        "[CODE QUALITY] Unused import detected: os",
+        "[CODE QUALITY] Unused import detected: json",
+        "[CODE QUALITY] Unused variable detected: z",
+        "[CODE QUALITY] Unused variable detected: password",
+        "[ERROR HANDLING] Line 35: Catching a broad exception (except:).",
+        "[ERROR HANDLING] Line 45: Catching a broad exception (except:)."
+    ],
+    "function_complexity": {
+        "MissingDocstringFunction": 0,
+        "deep_recursion": 1,
+        "long_function": 3,
+        "complex_function": 7,
+        "unused_function": 0,
+        "except_without_exception": 1,
+        "large_memory_usage": 0
+    },
+    "function_lengths": {
+        "MissingDocstringFunction": 1,
+        "deep_recursion": 2,
+        "long_function": 1,
+        "complex_function": 2,
+        "unused_function": 1,
+        "except_without_exception": 2,
+        "large_memory_usage": 3
+    },
+    "unused_imports": [
+        "hashlib",
+        "os",
+        "json"
+    ],
+    "suggestions": [
+        {
+            "issue": "[CODE QUALITY] Unused import detected: hashlib",
+            "suggestion": "Remove the unused import 'hashlib'."
+        },
+        {
+            "issue": "[CODE QUALITY] Unused import detected: os",
+            "suggestion": "Remove the unused import 'os'."
+        },
+        {
+            "issue": "[CODE QUALITY] Unused import detected: json",
+            "suggestion": "Remove the unused import 'json'."
+        },
+        {
+            "issue": "[CODE QUALITY] Unused variable detected: z",
+            "suggestion": "Remove or use the unused variable 'z' to improve efficiency."
+        },
+        {
+            "issue": "[CODE QUALITY] Unused variable detected: password",
+            "suggestion": "Remove or use the unused variable 'password' to improve efficiency."
+        },
+        {
+            "issue": "[ERROR HANDLING] Line 35: Catching a broad exception (except:).",
+            "suggestion": "Use 'except Exception as e:' to avoid catching all errors blindly."
+        },
+        {
+            "issue": "[ERROR HANDLING] Line 45: Catching a broad exception (except:).",
+            "suggestion": "Use 'except Exception as e:' to avoid catching all errors blindly."
+        }
+    ]
+}
